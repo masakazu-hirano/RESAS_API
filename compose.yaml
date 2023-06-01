@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  RESAS:
+    container_name: RESAS_API
+    image: resas:latest
+    build:
+      context: .
+    volumes:
+      - .:/usr/local/src:delegated
+    tty: true
